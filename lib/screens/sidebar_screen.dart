@@ -12,7 +12,7 @@ class SidebarScreen extends StatelessWidget {
           color: kSidebarBackgroundColor,
           borderRadius: BorderRadius.only(topRight: Radius.circular(34.0))),
       height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.height * 0.85,
+      width: MediaQuery.of(context).size.width * 0.85,
       padding: EdgeInsets.symmetric(vertical: 35, horizontal: 20),
       child: SafeArea(
         child: Column(

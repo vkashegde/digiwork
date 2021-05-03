@@ -2,16 +2,13 @@ import 'package:digiwork/constants.dart';
 import 'package:flutter/material.dart';
 
 class SidebarButton extends StatelessWidget {
-  const SidebarButton({
-    Key key,
-  }) : super(key: key);
+  SidebarButton({@required this.triggerAnimation});
+  final Function triggerAnimation;
 
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      onPressed: () {
-        print("sidebar button pressed");
-      },
+      onPressed: triggerAnimation,
       //it will only tap on content not outside.
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
       highlightColor: Colors.transparent,
